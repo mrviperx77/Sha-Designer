@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SD Graphic Design Portfolio - Logo, thumbnail, poster and product poster design." />
+  <title>SD — Graphic Design Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="SD Home">
+      <img src="web/assets/sd logo.png" alt="SD Logo">
+    </a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="mailto:shadesigner93@gmail.com?subject=Design%20Project%20Inquiry">Hire Me</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Graphic Design • Visual Content</div>
+      <h1>DESIGN THAT<br><span>GETS NOTICED.</span></h1>
+      <p class="hero-copy">
+        Creative graphic design for brands, products and social media —
+        from logos and thumbnails to high-impact posters and product advertisements.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="#portfolio">View Portfolio</a>
+        <a class="btn secondary" href="mailto:shadesigner93@gmail.com?subject=Design%20Project%20Inquiry">Start a Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">What I Do</div>
+          <h2>Services</h2>
+        </div>
+        <p>Choose a design service and send your project details by email. Fast, clean and made for real-world promotion.</p>
+      </div>
+
+      <div class="services">
+        <article class="service">
+          <div class="num">01</div>
+          <h3>Logo & Brand</h3>
+          <p>Modern logos and simple visual identities for new or growing brands.</p>
+        </article>
+        <article class="service">
+          <div class="num">02</div>
+          <h3>Thumbnail Design</h3>
+          <p>Eye-catching thumbnails designed to improve attention and clicks.</p>
+        </article>
+        <article class="service">
+          <div class="num">03</div>
+          <h3>Poster Design</h3>
+          <p>Creative promotional posters for events, food, offers and social media.</p>
+        </article>
+        <article class="service">
+          <div class="num">04</div>
+          <h3>Product Poster</h3>
+          <p>Product-focused advertising artwork with strong composition and visuals.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Selected Work</div>
+          <h2>Portfolio</h2>
+        </div>
+        <p>Click any project to view it larger.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="poster">Poster</button>
+        <button class="filter" data-filter="product">Product</button>
+        <button class="filter" data-filter="advertising">Advertising</button>
+      </div>
+
+      <div class="portfolio">
+        <article class="work" data-category="poster" onclick="openModal(this)">
+          <img src="assets/biriyani-poster.jpg" alt="Special Biriyan poster design">
+          <div class="work-info"><small>Poster Design</small><h3>Special Biriyan</h3></div>
+        </article>
+
+        <article class="work" data-category="product" onclick="openModal(this)">
+          <img src="assets/juice-poster.jpg" alt="Juice product poster design">
+          <div class="work-info"><small>Product Poster</small><h3>Freshness In Every Sip</h3></div>
+        </article>
+
+        <article class="work" data-category="advertising" onclick="openModal(this)">
+          <img src="assets/nike-poster.jpg" alt="Nike Air Zoom advertising poster">
+          <div class="work-info"><small>Advertising Poster</small><h3>Air Zoom</h3></div>
+        </article>
+
+        <article class="work" data-category="product" onclick="openModal(this)">
+          <img src="assets/headphone-poster.jpg" alt="Headphone product poster design">
+          <div class="work-info"><small>Product Poster</small><h3>Feel The Sound</h3></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about">
+      <div>
+        <div class="section-kicker">About</div>
+        <h2>Simple ideas.<br>Strong visuals.</h2>
+        <p>
+          I create modern graphic designs focused on clear communication,
+          strong typography, product presentation and social-media impact.
+          If you have an idea, send the details and let's turn it into a finished design.
+        </p>
+        <div class="buttons">
+          <a class="btn" href="mailto:shadesigner93@gmail.com?subject=Design%20Project%20Inquiry">Email Me</a>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>01</strong><span>Logo & Brand</span></div>
+        <div class="stat"><strong>02</strong><span>Thumbnails</span></div>
+        <div class="stat"><strong>03</strong><span>Posters</span></div>
+        <div class="stat"><strong>04</strong><span>Product Ads</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact">
+        <div>
+          <div class="section-kicker">Let's Work Together</div>
+          <h2>Have a project?</h2>
+          <div class="email">shadesigner93@gmail.com</div>
+        </div>
+        <a class="btn" href="mailto:shadesigner93@gmail.com?subject=Design%20Project%20Inquiry&body=Hi%20SD,%0A%0AI%20need%20a%20design%20for:%0A%0AType:%0AProject%20details:%0ABudget:%0ADeadline:%0A%0AThank%20you.">Send Project Details →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© 2026 SD Graphic Design</span>
+    <span>Logo • Thumbnail • Poster • Product Design</span>
+  </div>
+</footer>
+
+<div class="modal" id="modal" onclick="closeModal(event)">
+  <button class="close" aria-label="Close">&times;</button>
+  <img id="modalImage" src="" alt="Portfolio preview">
+</div>
+
+<script>
+  const filters = document.querySelectorAll('.filter');
+  const works = document.querySelectorAll('.work');
+
+  filters.forEach(button => {
+    button.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      button.classList.add('active');
+      const category = button.dataset.filter;
+
+      works.forEach(work => {
+        work.style.display =
+          category === 'all' || work.dataset.category === category
+          ? 'block' : 'none';
+      });
+    });
+  });
+
+  function openModal(card){
+    const img = card.querySelector('img');
+    document.getElementById('modalImage').src = img.src;
+    document.getElementById('modal').classList.add('open');
+  }
+
+  function closeModal(event){
+    if(event.target.id === 'modal' || event.target.classList.contains('close')){
+      document.getElementById('modal').classList.remove('open');
+    }
+  }
+
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+  });
+</script>
+
+</body>
+</html>
